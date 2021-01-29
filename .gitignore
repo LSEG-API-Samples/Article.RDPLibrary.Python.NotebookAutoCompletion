@@ -1,0 +1,4 @@
+.vscode/
+notebook/rdp.cfg
+notebook/.ipynb_checkpoints/
+debug.log
