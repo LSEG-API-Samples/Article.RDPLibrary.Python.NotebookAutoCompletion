@@ -1,4 +1,7 @@
 .vscode/
 notebook/rdp.cfg
 notebook/.ipynb_checkpoints/
+notebook/example/
+notebook/notebook1.ipynb
 debug.log
+note.txt
