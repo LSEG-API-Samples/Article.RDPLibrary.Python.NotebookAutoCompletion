@@ -47,10 +47,6 @@ or
 
 For the library that keeps involving like RDP Libraries, this is an inconvenient even the RDP Library itself is easy to use. 
 
-### Disclaimer
-
-As this notebook is based on alpha version **1.0.0.a7** of the Python library, the method signatures, data formats, etc. are subject to change.
-
 ## <a id="autocompletion"></a>IPython Autocompletion
 
 Fortunately, the JupyterLab and Jupyter Notebook comes with the [IPython magic command](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-config) ```%config Completer.use_jedi = False``` that enables the library/function autocompletion (like *IntelliSense* in Microsoft development environment term).
@@ -79,7 +75,7 @@ Please see the full detail of IPython Autocompletion features with RDP Libraries
 ## <a id="prerequisite"></a>Prerequisite
 This demo project requires the following dependencies software.
 1. RDP Access credentials.
-2. [Refinitiv Data Plaform Library for Python](https://pypi.org/project/refinitiv-dataplatform/).
+2. [Refinitiv Data Platform Library for Python](https://pypi.org/project/refinitiv-dataplatform/).
 2. Python [Anaconda](https://www.anaconda.com/distribution/) or [MiniConda](https://docs.conda.io/en/latest/miniconda.html) distribution/package manager.
 3. [Jupyter Notebook or JupyterLab](https://jupyter.org/).
 4. Internet connection.
