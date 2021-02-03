@@ -2,11 +2,11 @@
 
 ## <a id="overview"></a>Overview
 
-With the rise of Data Scientists, Financial coders, Casual Developers or Traders (aka Citizen Developers), and the rapid growth of [Jupyter](https://jupyter.org/) application, [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/stable/) and its next-generation, [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/getting_started/overview.html) is a de-facto tool of those Citizen Developers. Thanks to [IPython kernel](https://ipython.org/), Notebook provides a powerful interactive shell, interactive data visualization, embedded documentation, and support various programming languages such as Python (native supported), [R](https://developers.refinitiv.com/en/article-catalog/article/setup-jupyter-notebook-r), [Julia](https://datatofish.com/add-julia-to-jupyter/) and much more. 
+With the rise of Data Scientists, Financial coders, Casual Developers, or Traders (aka Citizen Developers), and the rapid growth of [Jupyter](https://jupyter.org/) application, [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/stable/) and its next-generation, [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/getting_started/overview.html) is a de-facto tool of those Citizen Developers. Thanks to the [IPython kernel](https://ipython.org/), Notebook provides a powerful interactive shell, interactive data visualization, embedded documentation, and supports various programming languages such as Python (native supported), [R](https://developers.refinitiv.com/en/article-catalog/article/setup-jupyter-notebook-r), [Julia](https://datatofish.com/add-julia-to-jupyter/), and much more. 
 
 The Notebook application is easier to use when comparing to other traditional IDEs (Integrated development environment) or Editors. Citizen Developers do not need much programming language or technology experience to use the Notebook application. However, The Jupyter Notebook also provides Coding and [*Magic*](https://ipython.readthedocs.io/en/stable/interactive/magics.html) features which make Notebook a friendly development environment for both Citizen and Professional Developers.
 
-This article demonstrates how to enable Python/Jupyter application coding autocompletion feature. The demo application uses content from [Refinitiv Data Platform (RDP)](https://developers.refinitiv.com/refinitiv-data-platform/refinitiv-data-platform-apis) as an example library.
+This article demonstrates how to enable Python/Jupyter application coding autocompletion feature. The demo application uses content from the [Refinitiv Data Platform (RDP)](https://developers.refinitiv.com/refinitiv-data-platform/refinitiv-data-platform-apis) as an example library.
 
 ## <a id="rdp_introduction"></a>Introduction to Refinitiv Data Platform (RDP) Libraries
 
@@ -45,7 +45,7 @@ or
 
 ![Figure-2](./notebook/images/rdp_python_help2.png "Python help on RDP open_platform_session function") 
 
-For the library that keeps involving like RDP Libraries, this is an inconvenient even the RDP Library itself is easy to use. 
+For the library that keeps involving like RDP Libraries, this is inconvenient even the RDP Library itself is easy to use. 
 
 ## <a id="autocompletion"></a>IPython Autocompletion
 
@@ -61,12 +61,11 @@ Once you have enabled and run the ```%config Completer.use_jedi = False``` magic
 
 Let's try it yourself, please select the space just after the ```"."``` character below and hit the ```tab``` button.
 
-This IPython command also enable the ```"shift + tab"``` buttons to show the function help and tooltip information.
+This IPython command also enables the ```"shift + tab"``` buttons to show the function help and tooltip information.
 
 ![Figure-5](./notebook/images/ipython_autocomple_2.gif "RDP with IPython function Autocompletion") 
 
-You can also use "?" at the end of function (without ```()```) to display documentation for objects and methods in IPython environment.
-
+You can also use "?" at the end of the function (without ```()```) to display documentation for objects and methods in the IPython environment.
 
 ![Figure-5](./images/ipython_magic_documentation.png "RDP with IPython function Autocompletion") 
 
@@ -80,7 +79,7 @@ This demo project requires the following dependencies software.
 3. [Jupyter Notebook or JupyterLab](https://jupyter.org/).
 4. Internet connection.
 
-Please contact your Refinitiv's representative to help you to access Refinitiv Data Platform credentials. You can generate/manage the AppKey from the  [AppKeyGenerator web site](https://emea1.apps.cp.thomsonreuters.com/apps/AppkeyGenerator) or AppKey Generator tool in Eikon Desktop/Refinitiv Workspace application. 
+Please contact your Refinitiv's representative to help you to access Refinitiv Data Platform credentials. You can generate/manage the AppKey from the  [AppKeyGenerator website](https://emea1.apps.cp.thomsonreuters.com/apps/AppkeyGenerator) or AppKey Generator tool in Eikon Desktop/Refinitiv Workspace application. 
 
 ## <a id="application_files"></a>Project Application Files
 This example project contains the following files and folders
@@ -91,8 +90,8 @@ This example project contains the following files and folders
 5. *README.md*: Project's README file.
 
 ## <a id="running"></a>Running the example Notebook.
-1. Open Anaconda Prompt and go to project's folder
-2. Run the following command in a Anaconda Prompt to create Conda environment named *RDP_Notebook* for the project.
+1. Open Anaconda Prompt and go to the project's folder
+2. Run the following command in a Anaconda Prompt to create a Conda environment named *RDP_Notebook* for the project.
     ```
     (base) $>conda create --name RDP_Notebook python=3.7
     ```
@@ -104,7 +103,7 @@ This example project contains the following files and folders
     ```
     (RDP_Notebook) $>pip install -r requirements.txt
     ```
-5. Go to project's *notebook folder* and create a file name ```rdp.cfg``` with the following content
+5. Go to the project's *notebook folder* and create a file name ```rdp.cfg``` with the following content
     ```
     [rdp]
     username = YOUR_RDP_USERNAME
@@ -121,7 +120,7 @@ This example project contains the following files and folders
     app_key=bbb_example_client_id_ccc
     ```
 
-6. In the current Anaconda Prompt, go to project's notebook folder. Run the following command to start JupyterLab application in the notebook folder.
+6. In the current Anaconda Prompt, go to the project's notebook folder. Run the following command to start JupyterLab application in the notebook folder.
     ```
     (RDP_Notebook) $>notebook>jupyter-lab
     ```
@@ -152,5 +151,6 @@ You can find more details regarding the Refinitiv Data Platform Libraries and Ju
 * [RDP Libraries Tutorial page](https://developers.refinitiv.com/en/api-catalog/refinitiv-data-platform/refinitiv-data-platform-libraries/tutorials).
 * [Discover our Refinitiv Data Platform Library (part 1)](https://developers.refinitiv.com/en/article-catalog/article/discover-our-refinitiv-data-platform-library-part-1).
 * [Discover our Refinitiv Data Platform Library (part 2)](https://developers.refinitiv.com/en/article-catalog/article/discover-our-refinitiv-data-platform-library-part-2).
+* [Use Eikon Data API or RDP Library in Python in CodeBook on Web Browser article](https://developers.refinitiv.com/en/article-catalog/article/use-eikon-data-api-or-rdp-library-python-codebook-web-browser)
 
 For any questions related to this article or Refinitiv Data Platform Libraries, please use the Developers Community [Q&A Forum](https://community.developers.refinitiv.com/spaces/321/refinitiv-data-platform-libraries.html).
