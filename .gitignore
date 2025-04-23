@@ -7,3 +7,13 @@ notebook/notebook2.ipynb
 debug.log
 note.txt
 video/
+ld/
+notebook/.ipynb_checkpoints
+notebook/lseg-data.devrel.config.json
+notebook/.cache
+notebook/.config
+notebook/.ipython
+notebook/.jupyter
+notebook/.local
+notebook/.env
+notebook/app.py
