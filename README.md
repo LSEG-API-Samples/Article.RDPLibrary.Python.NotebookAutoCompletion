@@ -1,10 +1,11 @@
-# How to enable Autocompletion in Jupyter Notebook application
+# How to enable Autocompletion in JupyterLab application
+
 
 ## <a id="overview"></a>Overview
 
 **Last Updated**: April 2025
 
-With the rise of Data Scientists, Financial coders, Casual Developers, or Traders (aka Citizen Developers), and the rapid growth of [Jupyter](https://jupyter.org/) application, [Jupyter Notebook](https://jupyter-notebook.readthedocs.io/en/stable/) and its next-generation, [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/getting_started/overview.html) is a de-facto tool of those Citizen Developers. Thanks to the [IPython kernel](https://ipython.org/), Notebook provides a powerful interactive shell, interactive data visualization, embedded documentation, and supports various programming languages such as Python (native supported), [R](https://developers.refinitiv.com/en/article-catalog/article/setup-jupyter-notebook-r), [Julia](https://datatofish.com/add-julia-to-jupyter/), and much more. 
+With the rise of Data Scientists, Financial coders, Casual Developers, or Traders (aka Citizen Developers), and the rapid growth of [Jupyter](https://jupyter.org/) application, the [JupyterLab](https://jupyter.org/) (aka Notebook) is a de-facto tool of those Citizen Developers. Thanks to the [IPython kernel](https://ipython.org/), Notebook provides a powerful interactive shell, interactive data visualization, embedded documentation, and supports various programming languages such as Python (native supported), [R](https://developers.refinitiv.com/en/article-catalog/article/setup-jupyter-notebook-r), [Julia](https://datatofish.com/add-julia-to-jupyter/), and much more.
 
 The Notebook application is easier to use when comparing to other traditional IDEs (Integrated development environment) or Editors. Citizen Developers do not need much programming language or technology experience to use the Notebook application. However, The Jupyter Notebook also provides Coding and [*Magic*](https://ipython.readthedocs.io/en/stable/interactive/magics.html) features which make Notebook a friendly development environment for both Citizen and Professional Developers.
 
@@ -12,7 +13,7 @@ This article demonstrates how to enable Python/Jupyter application coding autoco
 
 ## <a id="data_lib"></a>Introduction to the Data Library for Python
 
-The [Data Library for Python](https://developers.lseg.com/en/api-catalog/lseg-data-platform/lseg-data-library-for-python) provides a set of ease-of-use interfaces offering coders uniform access to the breadth and depth of financial data and services available on the Workspace, RDP, and Real-Time Platforms. The API is designed to provide consistent access through multiple access channels and target both Professional Developers and Financial Coders. Developers can choose to access content from the desktop, through their deployed streaming services, or directly to the cloud. With the Data Library, the same Python code can be used to retrieve data regardless of which access point you choose to connect to the platform.
+The [Data Library for Python](https://developers.lseg.com/en/api-catalog/lseg-data-platform/lseg-data-library-for-python) provides a set of ease-of-use interfaces offering coders uniform access to the breadth and depth of financial data and services available on the Workspace, Data Platform, and Real-Time Platforms. The API is designed to provide consistent access through multiple access channels and target both Professional Developers and Financial Coders. Developers can choose to access content from the desktop, through their deployed streaming services, or directly to the cloud. With the Data Library, the same Python code can be used to retrieve data regardless of which access point you choose to connect to the platform.
 
 ![Figure-1](images/datalib_image.png "Data Library Diagram") 
 
@@ -49,13 +50,13 @@ or
 
 ![Figure-2](images/help_ld2.png "Python help on Data Library open_session function") 
 
-For the library that keeps involving like RDP Libraries, this is inconvenient even the RDP Library itself is easy to use. 
+For the library that keeps involving like Data Library for Python, this is inconvenient even the Library itself is easy to use. 
 
 ## <a id="autocompletion"></a>IPython Autocompletion
 
-Fortunately, the JupyterLab and Jupyter Notebook comes with the [IPython magic command](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-config) ```%config Completer.use_jedi = False``` that enables the library/function autocompletion (like *IntelliSense* in Microsoft development environment term).
+Fortunately, the JupyterLab comes with the [IPython magic command](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-config) ```%config Completer.use_jedi = False``` statement that enables the library/function autocompletion (like *IntelliSense* in Microsoft development environment term).
 
-You need to set the magic command ```%config Completer.use_jedi = False``` at the **top cell** of the Notebook application (like this Notebook). 
+You need to set the magic command ```%config Completer.use_jedi = False``` statement at the **top cell** of the Notebook application (like this Notebook). 
 
 ![Figure-3](./images/ipython_magic_command.png "IPython Magic command location") 
 
@@ -63,17 +64,15 @@ Once you have enabled and run the ```%config Completer.use_jedi = False``` magic
 
 ![Figure-4](./images/ipython_autocomplete_1.png "Data Library with IPython Autocompletion") 
 
-Let's try it yourself, please select the space just after the ```"."``` character below and hit the ```tab``` button.
-
 This IPython command also enables the ```"shift + tab"``` buttons to show the function help and tooltip information.
 
 ![Figure-5](./images/ipython_autocomplete_2.png "Data Library with IPython function Autocompletion") 
 
 You can also use "?" at the end of the function (without ```()```) to display documentation for objects and methods in the IPython environment.
 
-![Figure-5](./images/ipython_magic_documentation.png "RDP with IPython function Autocompletion") 
+![Figure-5](./images/ipython_magic_documentation.png "Data Library with IPython function Autocompletion") 
 
-Please see the full detail of IPython Autocompletion features with RDP Libraries example in the [tutorial notebook](./notebook/ld_notebook.ipynb).
+Please see the full detail of IPython Autocompletion features with Data Library example in the [tutorial notebook](./notebook/ld_notebook.ipynb).
 
 ## <a id="prerequisite"></a>Prerequisite
 
@@ -108,7 +107,7 @@ This example project contains the following files and folders
     ```bash
     $>ld_notebook\Scripts\activate
     ```
-4. Run the following command to install RDP Library for Python and all dependencies in *ld_notebook* environment
+4. Run the following command to install Data Library for Python and all dependencies in *ld_notebook* environment
     ```bash
     (ld_notebook) $>pip install -r requirements.txt
     ```
